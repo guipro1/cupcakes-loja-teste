@@ -1,0 +1,80 @@
+.modal * {
+    margin: 0;
+    padding: 0;
+}
+
+.modal {
+    /* fundo escuro 50% transparente */
+    background-color: rgba(0, 0, 0, 0.5);
+    /*Posição fixa */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    /* Dimensões (largura x altura) */
+    width: 100%;
+    height: 100%;
+    /*Corta o conteudo excendente e não exibe rolagem */
+    overflow: hidden;
+    /* Usa flexbox para centralizar o conteudo */
+    display: none; /* Oculto por padrão */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-conteudo{
+    /* Fundo branco */
+    background-color: #ffffff;
+    /* Bordas arredondadas */
+    border-radius: 16px;
+    /* Espaçaentos interno (c/ propriedade resumida) */
+    /* superior inferior 16px e laterais 10px */
+    padding: 16px 10px;
+    /* Dimensões */
+    width: min(100%, 720px);
+    max-height: calc(100% - 32 - 20px);
+    /* Usa flexbox para alinhar em coluna os elementos */
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-cabecalho{
+    /* Usa flexbox para alinhar elementos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Espaçamentos internos superior e inferior */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* Espaçamento externo inferior */
+    margin-bottom: 10px;
+}
+
+.botao-fechar{
+    /* Dimensões */
+    width: 32px;
+    height: 32px;
+    /* Tamanho da fonte */
+    font-size: 28px;
+    /* Borda circular */
+    border-radius: 50%;
+    /* Remove linha de borda */
+    border: none;
+    /* Remove cor de fundo */
+    background: none;
+    /* Muda o cursos sobre o elemento */
+    cursor: pointer;
+}
+
+.botao-fechar:hover {
+    /* Muda cor de fundo quando cursor estiver sobre o botão */
+    background-color: #e75480;
+}
+
+.modal-corpo{
+    /* Aplica barra de rolagem automatica */
+    overflow: auto;
+}
+
+.visivel{
+    display: flex; /* Aplica flexbox ao elemento */
+}
