@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - CupcakeStore</title>
+    <link rel="shortcut icon" href="img/cupcakestore-logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/cupcakestore-logo.svg" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div id="marca">
+            <img id="marcaImagem" src="img/cupcakestore-logo.svg" width="128px" alt="">
+            <p id="marcaSlogan">Delícias em miniatura que conquistam corações</p>
+        </div>
+        <!-- Navegação Global -->
+        <nav id="navegacaoGlobal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sabores.html">Nossos Sabores</a></li>
+                <li><a href="login.html">Login/Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <hr>
+    <main class="conteiner">
+        <h1>Cadastro</h1>
+        <form id="formularioCadastro" class="formulario sombra" action="" method="post">
+            <fieldset class="">
+                <legend>Dados Pessoais</legend>
+                <div class="formulario-campo">
+                    <label for="nome">Nome</label>
+                    <input id="nome" name="nome" type="text" required>
+                </div>
+                <div class="formulario-campo">
+                    <label for="cpf">CPF</label>
+                    <input id="cpf" name="cpf" type="text" placeholder="000.000.000-00" required>
+                </div>
+                <div class="formulario-campo">
+                    <label for="celular">Celular</label>
+                    <input id="celular" name="celular" type="text" placeholder="(00) 90000-0000">
+                </div>
+                <div class="formulario-campo">
+                    <label for="nascimento">Data de Nascimento</label>
+                    <input type="date" id="nascimento" name="nascimento">
+                </div>
+                <div class="formulario-campo-radio">
+                    <p>Gênero</p>
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="feminino" name="genero" value="feminino">
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" id="naoDeclarar" name="genero" value="">
+                    <label for="naoDeclarar">Não Declarar</label>
+                </div>
+
+                <div class="formulario-campo">
+                    <label for="estadoCivil">Estado Civil</label>
+                    <select name="estado_civil" id="estadoCivil">
+                        <option value="solteiro">Solteiro</option>
+                        <option value="casado">Casado</option>
+                    </select>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Dados de Entrega</legend>
+                <div class="formulario-campo">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco" name="endereco" maxlength="250" required>
+                </div>
+                <div class="formulario-campo">
+                    <label for="cep">CEP</label>
+                    <input type="text" name="cep" id="cep" placeholder="00000-000">
+                </div>
+                <div class="formulario-campo">
+                    <label for="adicionais">Informações adicionais para auxiliar o entregador</label>
+                    <textarea name="adicionais" id="adicionais" maxlength="250"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados de Acesso</legend>
+                <div class="formulario-campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="formulario-campo">
+                    <label for="novaSenha">Senha</label>
+                    <input type="password" id="novaSenha" name="nova_senha" required>
+                </div>
+                <div class="formulario-campo">
+                    <label for="confirmeSenha">Confirme Senha</label>
+                    <input type="password" id="confirmeSenha" name="confirme_senha" required>
+                </div>
+            </fieldset>
+
+            <div>
+                <button class="botao-secundario" type="reset">Apagar</button>
+                <button class="botao-primario" type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+    <hr>
+    <footer id="rodape">
+        <p>&copy; 2025 CupcakeStore - Todos os direitos reservados</p>
+        <p>Siga-nos nas redes sociais: @cupcakestore</p>
+        <p>Desenvolvido com ❤️ e muito açúcar</p>
+    </footer>
+</body>
+
+</html>

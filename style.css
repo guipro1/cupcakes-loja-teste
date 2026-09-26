@@ -1,0 +1,417 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: weight;
+	font-style: normal;
+	color: #2e1903;
+}
+
+body {
+	background-image: url("https://etg.page.gd/cupcakestore-css2/img/imagem-fundo.jpg");
+	background-repeat: repeat-y;
+}
+
+/* FONTES */
+
+h1 {
+	font-family: "Playfair Display", serif;
+	font-optical-sizing: auto;
+	font-weight: normal;
+	font-size: 3em;
+	text-align: center;
+	padding: 60px 0px;
+}
+
+h2 {
+	font-family: "Dancing Script", cursive;
+	font-optical-sizing: auto;
+	font-weight: normal;
+	font-size: 2.2em;
+	text-align: center;
+}
+
+/* CONTEINER */
+.conteiner {
+	max-width: 960px;
+	/* SEMPRE MULTIPLOS DE 320px (FORMATO CELULAR) */
+	margin: 0 auto;
+	padding: 10px;
+}
+
+hr {
+	display: none;
+}
+
+/* HEADER */
+#cabecalho {
+	background-color: #e75480;
+	padding-top: 20px;
+	text-align: center;
+}
+
+#marcaImagem {
+	background-color: #ffffff;
+	width: 128px;
+	height: 128px;
+	border-radius: 50%;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#marcaSlogan {
+	color: #ffffff;
+}
+
+#navegacaoGlobal {
+	background-color: #2e1903;
+}
+
+#navegacaoGlobal ul {
+	list-style: none;
+	padding: 4px;
+}
+
+#navegacaoGlobal li {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	padding: 8px 10px;
+}
+
+#navegacaoGlobal a {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 6px;
+	padding: 8px;
+}
+
+#navegacaoGlobal a:hover {
+	background-color: #ffffff;
+	color: #2e1903;
+}
+
+/* MAIN */
+
+#navegacaoLocal ul {
+	list-style: none;
+	text-align: center;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+#navegacaoLocal li {
+	display: inline-block;
+	padding: 4px 10px;
+}
+
+#video {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+#video iframe {
+	width: 90%;
+	height: 480px;
+	border-radius: 10px;
+	border: 8px solid #ffffff;
+}
+
+.secao {
+	padding: 40px 0px;
+	border-top: 1px solid #e75480;
+	text-align: center;
+}
+
+h2 {
+	color: #e75480;
+	margin-bottom: 60px;
+}
+
+#equipe img {
+	width: 200px;
+	height: 200px;
+}
+
+#equipe h3 {
+	font-family: "Dancing Script", cursive;
+	font-weight: normal;
+	font-size: 1.6em;
+}
+
+.borda-circulo {
+	border-radius: 50%;
+}
+
+.sombra {
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.caixa {
+	display: inline-block;
+	width: 280px;
+}
+
+/* FOOTER */
+#rodape {
+	background-color: #2e1903;
+	color: #ffffff;
+	padding: 40px 0px;
+	text-align: center;
+	margin-top: 40px;
+}
+
+/* PRODUTOS */
+
+#filtros{
+	
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: first baseline;
+	column-gap: 20px;
+	row-gap: 10px;
+}
+
+#filtros select{
+	min-width: 200px;
+}
+
+#produtosGrade {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 32px 16px;
+}
+
+.produto {
+	width: min(100%, 280px);
+	border-radius: 10px;
+	background-color: #ffffff;
+}
+
+.produto .produto-imagem{
+	position: relative;
+}
+
+.produto img {
+    display: inline-block;
+	width: 100%;
+	height: 240px;
+	object-fit: cover;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.produto .botao-favoritar{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: transparent;
+	border: none;
+	font-size: 24px;
+	text-shadow: 0px 2px 6px #00000080;
+	cursor: pointer;
+}
+
+.produto-info {
+	padding: 0px 10px 10px 10px;
+}
+
+.produto-info h3 {
+	font-family: "Playfair Display", serif;
+	font-weight: normal;
+	font-size: 1.2em;
+	height: 48px;
+	margin: 5px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.produto-info p {
+	margin: 4px 0px;
+	text-align: center;
+}
+
+.produto-info .preco {
+	font-size: 1.4em;
+	color: #e75480;
+	font-weight: bold;
+}
+
+.produto-info .tamanho span {
+	display: inline-block;
+	background-color: #cccccc;
+	padding: 8px;
+	border-radius: 2px;
+	margin-top: 10px;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+.produto-info .categoria {
+	text-transform: capitalize;
+	margin-top: 5px;
+}
+
+.botao-primario {
+	display: inline-block;
+	background-color: #e75480;
+	color: white;
+	border: 2px solid #e75480;
+	padding: 8px 16px;
+	font-size: 16px;
+	border-radius: 8px;
+	cursor: pointer;
+	text-decoration: none;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.botao-secundario {
+	display: inline-block;
+	background-color: #ffffff;
+	color: #e75480;
+	border: 2px solid #e75480;
+	padding: 8px 16px;
+	font-size: 1rem;
+	border-radius: 8px;
+	cursor: pointer;
+	text-decoration: none;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botao-primario:hover {
+	background-color: #d1436f;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.botao-secundario:hover {
+	background-color: #e75480;
+	color: #ffffff;
+}
+
+/* CUPCAKE */
+
+.tabela-responsiva {
+	overflow-x: auto;
+}
+
+.tabela {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.tabela th {
+	background-color: #e75480;
+	color: #ffffff;
+	padding: 8px;
+}
+
+.tabela td {
+	border: 1px solid #e75480;
+	padding: 8px;
+}
+
+.lista {
+	text-align: start;
+}
+
+.galeria img {
+	border-radius: 10px;
+}
+
+.galeria .selecionada {
+	margin-bottom: 20px;
+}
+
+.galeria .selecionada img {
+	width: min(90%, 960px);
+}
+
+.galeria .miniaturas {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 8px;
+}
+
+.galeria .miniaturas img {
+	width: 72px;
+	height: 72px;
+	object-fit: cover;
+}
+
+/* LOGIN/CADASTRO */
+
+#formularioLogin {
+	max-width: 320px;
+}
+
+#formularioCadastro {
+	max-width: 640px;
+}
+
+.formulario {
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.formulario-campo,
+.formulario-campo-radio {
+	margin-bottom: 16px;
+}
+
+.formulario-campo label {
+	display: block;
+	margin: 4px 0px;
+}
+
+.formulario-campo input[type="text"],
+.formulario-campo input[type="email"],
+.formulario-campo input[type="password"],
+.formulario-campo textarea {
+	display: block;
+	padding: 8px;
+	border-radius: 8px;
+	width: calc(100% - 16px);
+	border: 1px solid #cccccc;
+	font-size: 1em;
+}
+
+.formulario-campo input[type="date"],
+.formulario-campo select {
+	padding: 8px;
+	border-radius: 8px;
+	border: 1px solid #cccccc;
+	font-size: 1em;
+}
+
+.formulario-campo textarea {
+	height: 240px;
+}
+
+.formulario fieldset {
+	border: none;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+.formulario legend {
+	font-family: "Dancing Script", cursive;
+	font-size: 1.6rem;
+	border-bottom: 1px solid #e75480;
+	margin-bottom: 20px;
+	color: #e75480;
+}

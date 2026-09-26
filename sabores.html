@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores - CupcakeStore</title>
+    <link rel="shortcut icon" href="img/cupcakestore-logo.svg" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div id="marca">
+            <img id="marcaImagem" src="img/cupcakestore-logo.svg" width="128px" alt="">
+            <p id="marcaSlogan">Delícias em miniatura que conquistam corações</p>
+        </div>
+        <!-- Navegação Global -->
+        <nav id="navegacaoGlobal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sabores.html">Nossos Sabores</a></li>
+                <li><a href="login.html">Login/Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main class="conteiner">
+        <h1>Nossos Sabores</h1>
+        <div class="introducao">
+            <p>Na CupcakeStore, cada cupcake é uma pequena obra de arte culinária. Nossos confeiteiros combinam
+                ingredientes
+                premium com técnicas tradicionais para criar sabores que encantam todos os paladares.</p>
+            <p>Explore nossa seleção de sabores clássicos e criações exclusivas, com opções para diversas preferências e
+                restrições alimentares. Todos os nossos cupcakes estão disponíveis nos tamanhos mini e standard.</p>
+        </div>
+
+        <!-- Lista de Produtos -->
+        <section id="produtos">
+            <h2>Nossos Cupcakes</h2>
+            <!-- Filtros -->
+            <div id="filtros">
+
+                <div class="formulario-campo">
+                    <label for="categoriaFiltro">Categoria:</label>
+                    <select id="categoriaFiltro">
+                        <option value="todos">Todos</option>
+                        <option value="chocolate">Chocolate</option>
+                        <option value="frutas">Frutas</option>
+                        <option value="especiais">Especiais</option>
+                    </select>
+                </div>
+                <div class="formulario-campo">
+                    <label for="precoFiltro">Preço máximo:</label>
+                    <input type="range" id="precoFiltro" min="5" max="20" value="20">
+                    <span id="precoValor">R$ 20,00</span>
+                </div>
+
+                <div>
+                    <div id="favoritosQuantidade">Favoritos: <span>0</span></div>
+                    <button id="botaoLimparFiltros" class="botao-primario">Limpar Filtros</button>
+                </div>
+            </div>
+
+            <!-- Listagem -->
+            <div id="produtosGrade" class="product-grid">
+                <!-- Os cupcakes serão inseridos aqui via JavaScript -->
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer id="rodape">
+        <p>&copy; 2025 CupcakeStore - Todos os direitos reservados</p>
+        <p>Siga-nos nas redes sociais: @cupcakestore</p>
+        <p>Desenvolvido com ❤️ e muito açúcar</p>
+    </footer>
+
+    <script src="js/listagem-produtos.js"></script>
+</body>
+
+</html>
